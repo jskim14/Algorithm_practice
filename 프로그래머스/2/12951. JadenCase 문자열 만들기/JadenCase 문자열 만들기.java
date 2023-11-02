@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 class Solution {
         public String solution(String s) {
-            String[] strings = s.split(" ", -1);
+            String[] strings = s.split(" ", -1); // 문자열 맨 끝 공백까지 split 
 
             return Arrays.stream(strings)
                     .map(s1 -> capitalizeWord(s1))
